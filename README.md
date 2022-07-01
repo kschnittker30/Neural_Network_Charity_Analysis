@@ -9,14 +9,19 @@ Alphabet Soup is a non-for-profit foundation that raises and distributes funds t
 
 4: A Written Report on the Neural Network Model
 
-# Results: Using bulleted lists and images to support your answers, address the following questions.
+  # Results: Using bulleted lists and images to support your answers, address the following questions.
 
-### Data Preprocessing
-What variable(s) are considered the target(s) for your model?
-What variable(s) are considered to be the features for your model?
-What variable(s) are neither targets nor features, and should be removed from the input data?
-Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+  ### Data Preprocessing
+  * The target variable is 'IS_SUCCESSFUL'. 
+  * The feature variables include 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'          
+  * Features to remove from the input data include 'EIN', 'NAME'. These values are neither targets nor features.
+
+  ### Compiling, Training, and Evaluating the Model
+  1.) Neurons, layers, and activation functions selected:
+      Since there are only positive cash inputs, only the Rectified Linear Unit (ReLU) and sigmoid functions can be used. 
+
+  2.) Target model performance:
+  3.) Steps to take to try and increase model performance
+
+  ### Summary
+  Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
