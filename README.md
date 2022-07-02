@@ -18,10 +18,17 @@ Alphabet Soup is a non-for-profit foundation that raises and distributes funds t
 
   ### Compiling, Training, and Evaluating the Model
   1.) Neurons, layers, and activation functions selected:
-      Since there are only positive cash inputs, only the Rectified Linear Unit (ReLU) and sigmoid functions can be used. 
+      Since there are only positive cash inputs, only the Rectified Linear Unit (ReLU) and sigmoid functions can be used. Two layers were selected with neuron values of 80 and 30. Adjusting the layers and neuron values reduced accuracy.
+      ![image](https://user-images.githubusercontent.com/99636479/176988757-c6c58945-dcf1-4b67-9d8a-571f3a8593f4.png)
+
 
   2.) Target model performance:
+      The target model performance was not achieved, the accuracy was too low to achieve consistent results and the loss was high.
+      ![image](https://user-images.githubusercontent.com/99636479/176988767-82d04039-077a-4242-b9ad-0cc01a505be9.png)
+
+      
   3.) Steps to take to try and increase model performance
+      A third layer was added to model, however the loss increased and the accuracy decreased. The activation was changed to all sigmoid, and again the loss increased and accuracy decreased. Changing the neuron values also increased the loss and decreased the accuracy. 
 
   ### Summary
-  Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+  Adjusting the layers, activiations, neuron values did not improve the accuract of the model above 70%. This is a very low indicator to achieve reliable results for AlphabetSoup to base their decision making on.  It is recommended to utilize another model to predict successful candidates for funding.
